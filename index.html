@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/63e420e540.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main id="main-container">
+
+        <!-- Logo -->
+        <aside class="spotify-bar flex-column">
+            <div class="nav-logo">
+                <img src="img/logo.svg" alt="Spotify">
+            </div>
+            <div class="nav-mobile-logo">
+                <img src="img/logo-small.svg" alt="Spotify">
+            </div>
+
+            <!-- nav menu -->
+             <section class="nav-main-menu">
+                <ul class="menu-list flex-column">
+                    <li class="active">
+                        <a href="#">
+                            <img src="img/home.svg" alt="Home">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/search.svg" alt="Cerca">
+                            <span>Cerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="Libreria">
+                            <span>La tua libreria</span>
+                        </a>
+                    </li>
+                </ul>
+             </section>
+             <!-- playlist -->
+             <section class="nav-playlist">
+                <h2>Playlist</h2>
+                <a href="#" class="add-playlist">
+                    <span>Crea Playlist</span>
+                </a>
+                <ul class="menu-list flex-column">
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="nav-bottom flex-row flex-column space-around">
+                <div class="app-download">
+                    <a href="#" class=" flex-row align-center">
+                        <img src="img/download.svg" alt="">
+                        <span>Installa app</span>
+                    </a>
+                </div>
+                <div class="user flex-row align-center">
+                    <div class="user-avatar">
+                        <img src="img/profile.svg" alt="">
+                    </div>
+                    <h2 class="user-name flex-row align-center">John Doe</h2>
+                </div>
+            </section>
+        </aside>
+       <!-- main top -->
+        <div class="small-container">
+            <div id="main-top">
+                <a href="#" class="btn">Effettua l'upgrade</a>
+            </div>
+            <nav class="main-content-top">
+                <ul class="nav-list flex-row">
+                    <li>
+                        <a href="#" class="active">IN EVIDENZA</a>
+                    </li>
+                    <li>
+                        <a href="#">PODCAST</a>
+                    </li>
+                    <li>
+                        <a href="#">CLASSIFICHE</a>
+                    </li>
+                    <li>
+                        <a href="#">GENERI E MOOD</a>
+                    </li>
+                    <li>
+                        <a href="#">NUOVE USCITE</a>
+                    </li>
+                    <li>
+                        <a href="#">SCOPRI</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="covers">
+                <!-- recently -->
+                <section id="recently" class="covers-row">
+                <h2>Recently played</h2>
+                <ul class="covers-list menu-list flex-row">
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <img src="img/metal_lifting.jpg" alt="" class="cover-img">
+                            <div class="cover-layover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="cover-text">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <img src="img/stranger.jpeg" alt="" class="cover-img">
+                            <div class="cover-layover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="cover-text">
+                            <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <p>Kyle Dixon &amp;Michael Stein</p>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <img src="img/aquietplace.jpeg" alt="" class="cover-img">
+                            <div class="cover-layover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="cover-text">
+                            <h3>A quiet place</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <img src="img/split.jpeg" alt="" class="cover-img">
+                            <div class="cover-layover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="cover-text">
+                            <h3>Split</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <img src="img/cure.jpeg" alt="" class="cover-img">
+                            <div class="cover-layover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="cover-text">
+                            <h3>A cure for wellness</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <img src="img/sinister.jpeg" alt="" class="cover-img">
+                            <div class="cover-layover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="cover-text">
+                            <h3>Sinister</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer id="footer-container">
+        <div id="tools">
+
+        </div>
+    </footer>
+</body>
+</html>
