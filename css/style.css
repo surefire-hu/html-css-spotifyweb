@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 /* General */
+html {
+    scrollbar-width: none;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
@@ -62,14 +66,12 @@ li {
     justify-content: center;
 }
 
-#main-container {
-    height: calc(100vh - 90px);
-}
 /* left-nav */
 
 #main-container {
     background-color: #141922;
     scrollbar-width: none;
+    height: 100%;
 }
 
 .spotify-bar {
@@ -195,6 +197,7 @@ h2 {
 
 .small-container {
     margin-left: 230px;
+    padding-bottom: 90px;
 }
 
 #main-top {
@@ -270,9 +273,20 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     font-size: 60px;
+}
+
+.covers-list .cover-item:hover .cover-container .cover-layover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.covers-list .cover-item:hover .cover-container .cover-layover i {
+    display: inline;
 }
 
 .cover-container .cover-layover i {
@@ -295,6 +309,15 @@ h2 {
     text-align: center;
 }
 
+.covers .covers-row > p {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+}
+
+#popular .cover-container img {
+    border-radius: 50%;
+}
 /* footer */
 
 #footer-container {
@@ -307,3 +330,97 @@ h2 {
     z-index: 1;
 }
 
+#tools {
+    width: 100%;
+    height: 100%;
+}
+
+.player-album {
+    width: 230px;
+    height: 100%;
+    padding: 10px;
+}
+
+.player-album .player-album-cover {
+    width: 20%;
+}
+
+.player-album img {
+    width: 100%;
+}
+
+.player-album-title {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.player-album-title h2 > a {
+    color: white;
+}
+
+.player-album-title > p {
+    font-size: 12px;
+}
+
+.player-icons i {
+    margin-left: 10px;
+}
+
+.player-controller {
+    width: 40%;
+    height: 100%;
+}
+
+.player-controller .player-controller-icons {
+    height: 60%;
+}
+
+.player-controller .player-controller-icons ul {
+    height: 100%;
+}
+
+.player-controller-icons i {
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.player-controller-time {
+    width: 100%;
+}
+
+.player-controller-time .player-controller-time-min {
+    width: 10%;
+    margin: 0 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.player-bar {
+    width: 80%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.player-bar .controller-elapsed {
+    position: relative;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.player-bar .controller-elapsed.perc-20 {
+    width: 20%;
+}
+
+.player-audio {
+    width: 230px;
+    height: 100%;
+    padding: 10px;
+}
+
+.player-audio-volume {
+    width: 70%;
+}
