@@ -296,6 +296,11 @@ ul {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+#popular .covers-list .cover-item:hover .cover-container .cover-layover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+
 .covers-list .cover-item:hover .cover-container .cover-layover i {
     display: inline;
 }
