@@ -75,10 +75,10 @@ li {
 }
 
 .spotify-bar {
-    height: calc(100vh - 90px);
     background-color: #000000;
     width: 230px;
     position: fixed;
+    height: calc(100% - 90px);
 }
 .nav-logo {
     padding: 20px;
@@ -96,7 +96,6 @@ li {
 }
 
 /* nav menu */
-
 .menu-list {
     font-size: 13px;
     line-height: 32px;
@@ -197,6 +196,7 @@ h2 {
 
 .small-container {
     margin-left: 230px;
+    width: calc(100% - 230px);
     padding-bottom: 90px;
 }
 
@@ -224,6 +224,16 @@ h2 {
     gap: 15px;
     font-size: 13px;
     line-height: 35px;
+    text-align: center;
+}
+
+ul {
+    display: block;
+}
+
+.inline li {
+    display: inline-block;
+    margin: 10px;
 }
 
 .nav-list a {
@@ -452,4 +462,103 @@ li a:hover, a span:hover, i:hover {
     height: 13px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 1);
-  }
+}
+
+@media screen and (max-width:1100px){
+    .covers .covers-list .cover-item {
+        width: calc(100% / 4 - 10px);
+        margin-right: 10px;
+    }
+
+    .covers-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:700px){
+    .covers .covers-list .cover-item {
+        width: calc(100% / 2 - 10px);
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:600px){
+    main aside.spotify-bar {
+        width: 50px;
+    }
+
+    .small-container {
+        margin-left: 50px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-mobile-logo {
+        display: block;
+    }
+
+    .nav-main-menu .menu-list {
+        text-align: center;
+    }
+
+    .nav-main-menu .menu-list li {
+        border: 0;
+        padding-left: 0;
+    }
+
+    .nav-main-menu .menu-list li a span {
+        display: none;
+    }
+
+    .nav-main-menu .menu-list li.active {
+        border: 0;
+    }
+    .nav-main-menu .menu-list img {
+        margin: 0;
+    }
+
+    .nav-playlist {
+        display: none;
+    }
+
+    .nav-bottom {
+        padding: 0;
+        align-items: center;
+    }
+
+    .nav-bottom .app-download {
+        text-align: center;
+        border: 0;
+        padding: 0;
+    }
+
+    .nav-bottom .app-download span{
+        display: none;
+    }
+
+    .nav-bottom .app-download img {
+        margin: 0;
+    }
+
+    .user .user-avatar {
+        margin-right: 0;
+    }
+
+    .user .user-name {
+        display: none;
+    }
+
+    .small-container {
+        width: calc(100% - 50px);
+    }
+
+    #main-top {
+        width: 100%;
+    }
+ 
+    .nav-main-menu {
+        height: calc(100% - 80px);
+    }
+}
