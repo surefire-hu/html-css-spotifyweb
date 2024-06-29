@@ -441,6 +441,11 @@ li a:hover, a span:hover, i:hover {
     background-color: white;
 }
 
+.player-album-title h2:hover, .player-album-title p a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 footer .fa-play-circle:hover {
     font-size: 20px;
 }
