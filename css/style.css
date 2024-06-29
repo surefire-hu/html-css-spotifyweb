@@ -292,19 +292,6 @@ ul {
     font-size: 60px;
 }
 
-.covers-list .cover-item:hover .cover-container .cover-layover {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-#popular .covers-list .cover-item:hover .cover-container .cover-layover {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-  }
-
-.covers-list .cover-item:hover .cover-container .cover-layover i {
-    display: inline;
-}
-
 .cover-container .cover-layover i {
     display: none;
 }
@@ -450,8 +437,21 @@ li a:hover, a span:hover, i:hover {
     color: white;
 }
 
-.fa-play-circle:hover {
+footer .fa-play-circle:hover {
     font-size: 20px;
+}
+
+.covers-list .cover-item:hover .cover-container .cover-layover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+#popular .covers-list .cover-item:hover .cover-container .cover-layover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+
+.covers-list .cover-item:hover .cover-container .cover-layover i {
+    display: inline;
 }
 
 .player-bar:hover .controller-elapsed {
