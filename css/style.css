@@ -156,7 +156,7 @@ h2 {
     color: #000000;
 }
 
-.menu-list {
+.nav-playlist .menu-list {
     height: 88%;
     scrollbar-width: none;
     overflow: auto;
@@ -435,6 +435,10 @@ ul {
 
 li a:hover, a span:hover, i:hover {
     color: white;
+}
+
+.add-playlist:hover span::before{
+    background-color: white;
 }
 
 footer .fa-play-circle:hover {
